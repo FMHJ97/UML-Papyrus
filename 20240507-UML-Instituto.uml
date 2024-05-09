@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_fXfJUAw_Ee-Uc9oQAB14vg" name="20240507-UML-Instituto">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_fb2E4Aw_Ee-Uc9oQAB14vg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Component" xmi:id="_UBDxsAxBEe-Uc9oQAB14vg" name="Instituto" useCase="_2tSqwAxCEe-Uc9oQAB14vg _DyYRsAxDEe-Uc9oQAB14vg _TW_2IAxDEe-Uc9oQAB14vg _XdJMIAxDEe-Uc9oQAB14vg _ZWEcoAxDEe-Uc9oQAB14vg _4KVbEAxDEe-Uc9oQAB14vg _phpd8AxEEe-Uc9oQAB14vg _Biqm8AxFEe-Uc9oQAB14vg _S4c8IAxHEe-Uc9oQAB14vg _ZwOFMAxHEe-Uc9oQAB14vg">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_LGsh8AxFEe-Uc9oQAB14vg">
+      <body>Extend = Funcionalidad Opcional
+Use == Include (Similares)</body>
+    </ownedComment>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_2tSqwAxCEe-Uc9oQAB14vg" name="Impartir Módulos" subject="_UBDxsAxBEe-Uc9oQAB14vg"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_DyYRsAxDEe-Uc9oQAB14vg" name="Proponer Libro" subject="_UBDxsAxBEe-Uc9oQAB14vg">
+      <extend xmi:type="uml:Extend" xmi:id="_IZf74AxFEe-Uc9oQAB14vg" extendedCase="_Biqm8AxFEe-Uc9oQAB14vg" extensionLocation="_IZhKAAxFEe-Uc9oQAB14vg"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_lC8zIAxGEe-Uc9oQAB14vg" name="Al pulsar botón"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_6R1LsAxGEe-Uc9oQAB14vg" name="Al activar casilla"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_TW_2IAxDEe-Uc9oQAB14vg" name="Gestionar Datos" subject="_UBDxsAxBEe-Uc9oQAB14vg"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_XdJMIAxDEe-Uc9oQAB14vg" name="Identificar en App" subject="_UBDxsAxBEe-Uc9oQAB14vg">
+      <include xmi:type="uml:Include" xmi:id="_ZXduUAxEEe-Uc9oQAB14vg" addition="_4KVbEAxDEe-Uc9oQAB14vg"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_ZWEcoAxDEe-Uc9oQAB14vg" name="Matricular en Módulos" subject="_UBDxsAxBEe-Uc9oQAB14vg"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_4KVbEAxDEe-Uc9oQAB14vg" name="Verificar Credenciales" subject="_UBDxsAxBEe-Uc9oQAB14vg"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_phpd8AxEEe-Uc9oQAB14vg" name="Planificar Módulo" subject="_UBDxsAxBEe-Uc9oQAB14vg"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Biqm8AxFEe-Uc9oQAB14vg" name="Sugerir Libro" subject="_UBDxsAxBEe-Uc9oQAB14vg">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_IZhKAAxFEe-Uc9oQAB14vg" name="ExtensionPoint1"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_S4c8IAxHEe-Uc9oQAB14vg" name="Introducir &quot;Usuario&quot; y &quot;Password&quot;" subject="_UBDxsAxBEe-Uc9oQAB14vg">
+      <generalization xmi:type="uml:Generalization" xmi:id="_g3DlAAxHEe-Uc9oQAB14vg" general="_UBDxsAxBEe-Uc9oQAB14vg"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_ZwOFMAxHEe-Uc9oQAB14vg" name="Identificación con RRSS" subject="_UBDxsAxBEe-Uc9oQAB14vg">
+      <generalization xmi:type="uml:Generalization" xmi:id="_fGJoEAxHEe-Uc9oQAB14vg" general="_XdJMIAxDEe-Uc9oQAB14vg"/>
+    </ownedUseCase>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_4RSCgAxBEe-Uc9oQAB14vg" name="Profesor">
+    <generalization xmi:type="uml:Generalization" xmi:id="_MPSpEAxCEe-Uc9oQAB14vg" general="_GWwvcAxCEe-Uc9oQAB14vg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_-6E7cAxBEe-Uc9oQAB14vg" name="Alumno">
+    <generalization xmi:type="uml:Generalization" xmi:id="_UBPicAxCEe-Uc9oQAB14vg" general="_GWwvcAxCEe-Uc9oQAB14vg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_GWwvcAxCEe-Uc9oQAB14vg" name="Persona"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fZc7YAxDEe-Uc9oQAB14vg" memberEnd="_fZhM0AxDEe-Uc9oQAB14vg _fZjpEAxDEe-Uc9oQAB14vg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fZf-sAxDEe-Uc9oQAB14vg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fZf-sQxDEe-Uc9oQAB14vg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fZhM0AxDEe-Uc9oQAB14vg" name="impartir módulos" type="_2tSqwAxCEe-Uc9oQAB14vg" association="_fZc7YAxDEe-Uc9oQAB14vg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fZjpEAxDEe-Uc9oQAB14vg" name="profesor" type="_4RSCgAxBEe-Uc9oQAB14vg" association="_fZc7YAxDEe-Uc9oQAB14vg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jEpawAxDEe-Uc9oQAB14vg" memberEnd="_jEqo4AxDEe-Uc9oQAB14vg _jEqo4QxDEe-Uc9oQAB14vg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jEqB0AxDEe-Uc9oQAB14vg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jEqB0QxDEe-Uc9oQAB14vg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_jEqo4AxDEe-Uc9oQAB14vg" name="proponer libro" type="_DyYRsAxDEe-Uc9oQAB14vg" association="_jEpawAxDEe-Uc9oQAB14vg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_jEqo4QxDEe-Uc9oQAB14vg" name="profesor" type="_4RSCgAxBEe-Uc9oQAB14vg" association="_jEpawAxDEe-Uc9oQAB14vg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nYhqwAxDEe-Uc9oQAB14vg" memberEnd="_nYiR0gxDEe-Uc9oQAB14vg _nYiR0wxDEe-Uc9oQAB14vg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nYiR0AxDEe-Uc9oQAB14vg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nYiR0QxDEe-Uc9oQAB14vg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_nYiR0gxDEe-Uc9oQAB14vg" name="matricular en módulos" type="_ZWEcoAxDEe-Uc9oQAB14vg" association="_nYhqwAxDEe-Uc9oQAB14vg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_nYiR0wxDEe-Uc9oQAB14vg" name="alumno" type="_-6E7cAxBEe-Uc9oQAB14vg" association="_nYhqwAxDEe-Uc9oQAB14vg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_r9o0sAxDEe-Uc9oQAB14vg" memberEnd="_r9qC0QxDEe-Uc9oQAB14vg _r9qC0gxDEe-Uc9oQAB14vg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_r9pbwAxDEe-Uc9oQAB14vg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_r9qC0AxDEe-Uc9oQAB14vg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_r9qC0QxDEe-Uc9oQAB14vg" name="gestionar datos" type="_TW_2IAxDEe-Uc9oQAB14vg" association="_r9o0sAxDEe-Uc9oQAB14vg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_r9qC0gxDEe-Uc9oQAB14vg" name="profesor" type="_4RSCgAxBEe-Uc9oQAB14vg" association="_r9o0sAxDEe-Uc9oQAB14vg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_tPMjMAxDEe-Uc9oQAB14vg" memberEnd="_tPNxUAxDEe-Uc9oQAB14vg _tPNxUQxDEe-Uc9oQAB14vg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tPNKQAxDEe-Uc9oQAB14vg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tPNKQQxDEe-Uc9oQAB14vg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_tPNxUAxDEe-Uc9oQAB14vg" name="identificar en app" type="_XdJMIAxDEe-Uc9oQAB14vg" association="_tPMjMAxDEe-Uc9oQAB14vg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_tPNxUQxDEe-Uc9oQAB14vg" name="profesor" type="_4RSCgAxBEe-Uc9oQAB14vg" association="_tPMjMAxDEe-Uc9oQAB14vg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_uivOsAxDEe-Uc9oQAB14vg" memberEnd="_uiv1wgxDEe-Uc9oQAB14vg _uiv1wwxDEe-Uc9oQAB14vg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uiv1wAxDEe-Uc9oQAB14vg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uiv1wQxDEe-Uc9oQAB14vg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_uiv1wgxDEe-Uc9oQAB14vg" name="gestionar datos" type="_TW_2IAxDEe-Uc9oQAB14vg" association="_uivOsAxDEe-Uc9oQAB14vg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_uiv1wwxDEe-Uc9oQAB14vg" name="alumno" type="_-6E7cAxBEe-Uc9oQAB14vg" association="_uivOsAxDEe-Uc9oQAB14vg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_vfBQwAxDEe-Uc9oQAB14vg" memberEnd="_vfB30gxDEe-Uc9oQAB14vg _vfB30wxDEe-Uc9oQAB14vg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vfB30AxDEe-Uc9oQAB14vg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vfB30QxDEe-Uc9oQAB14vg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_vfB30gxDEe-Uc9oQAB14vg" name="identificar en app" type="_XdJMIAxDEe-Uc9oQAB14vg" association="_vfBQwAxDEe-Uc9oQAB14vg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_vfB30wxDEe-Uc9oQAB14vg" name="alumno" type="_-6E7cAxBEe-Uc9oQAB14vg" association="_vfBQwAxDEe-Uc9oQAB14vg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_xtA84AxEEe-Uc9oQAB14vg" client="_2tSqwAxCEe-Uc9oQAB14vg" supplier="_phpd8AxEEe-Uc9oQAB14vg"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_UAw58AxFEe-Uc9oQAB14vg" name="LibrosFP.apk"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fQ6YgAxFEe-Uc9oQAB14vg" memberEnd="_fQ6_kgxFEe-Uc9oQAB14vg _fQ7moAxFEe-Uc9oQAB14vg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fQ6_kAxFEe-Uc9oQAB14vg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fQ6_kQxFEe-Uc9oQAB14vg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fQ6_kgxFEe-Uc9oQAB14vg" name="sugerir libro" type="_Biqm8AxFEe-Uc9oQAB14vg" association="_fQ6YgAxFEe-Uc9oQAB14vg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fQ7moAxFEe-Uc9oQAB14vg" name="librosfp.apk" type="_UAw58AxFEe-Uc9oQAB14vg" association="_fQ6YgAxFEe-Uc9oQAB14vg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_BQQEcAxJEe-Uc9oQAB14vg" name="Persona" isAbstract="true">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ScKW0AxJEe-Uc9oQAB14vg" name="DNI" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_w1FAkAxKEe-Uc9oQAB14vg" name="Nombre" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_5H8OoAxKEe-Uc9oQAB14vg" name="Email" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_79h7sAxKEe-Uc9oQAB14vg" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Py6KsAxLEe-Uc9oQAB14vg" name="Alumno">
+    <generalization xmi:type="uml:Generalization" xmi:id="_XlpuQAxLEe-Uc9oQAB14vg" general="_BQQEcAxJEe-Uc9oQAB14vg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_TZeBsAxLEe-Uc9oQAB14vg" name="Profesor">
+    <generalization xmi:type="uml:Generalization" xmi:id="_Y0A-0AxLEe-Uc9oQAB14vg" general="_BQQEcAxJEe-Uc9oQAB14vg"/>
+  </packagedElement>
+</uml:Model>
