@@ -97,21 +97,136 @@ Use == Include (Similares)</body>
     <ownedEnd xmi:type="uml:Property" xmi:id="_fQ7moAxFEe-Uc9oQAB14vg" name="librosfp.apk" type="_UAw58AxFEe-Uc9oQAB14vg" association="_fQ6YgAxFEe-Uc9oQAB14vg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_BQQEcAxJEe-Uc9oQAB14vg" name="Persona" isAbstract="true">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_ScKW0AxJEe-Uc9oQAB14vg" name="DNI" visibility="private">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ScKW0AxJEe-Uc9oQAB14vg" name="dni" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_w1FAkAxKEe-Uc9oQAB14vg" name="Nombre" visibility="private">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_w1FAkAxKEe-Uc9oQAB14vg" name="nombre" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_5H8OoAxKEe-Uc9oQAB14vg" name="Email" visibility="private">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_5H8OoAxKEe-Uc9oQAB14vg" name="email" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_79h7sAxKEe-Uc9oQAB14vg" value="*"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_Py6KsAxLEe-Uc9oQAB14vg" name="Alumno">
     <generalization xmi:type="uml:Generalization" xmi:id="_XlpuQAxLEe-Uc9oQAB14vg" general="_BQQEcAxJEe-Uc9oQAB14vg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_eLy84A3tEe-x8-mqo4pgnw" name="fechaNacimiento" visibility="private" type="_JRBBgA3sEe-x8-mqo4pgnw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_TA-mEA30Ee-x8-mqo4pgnw" name="matricula" type="_GGydAA3zEe-x8-mqo4pgnw" aggregation="composite" association="_TA6UoA30Ee-x8-mqo4pgnw"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Lw4rUA3uEe-x8-mqo4pgnw" name="matricular" visibility="private">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_DntvUA3vEe-x8-mqo4pgnw" name="curso" type="_mZWXsA3uEe-x8-mqo4pgnw"/>
+    </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_TZeBsAxLEe-Uc9oQAB14vg" name="Profesor">
     <generalization xmi:type="uml:Generalization" xmi:id="_Y0A-0AxLEe-Uc9oQAB14vg" general="_BQQEcAxJEe-Uc9oQAB14vg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_c0MJYA3wEe-x8-mqo4pgnw" name="especialidad" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_gj8_sA3wEe-x8-mqo4pgnw" name="suplemento" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_kljM4A3wEe-x8-mqo4pgnw" name="calcularSuplemento" visibility="private">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_xs5doA3wEe-x8-mqo4pgnw" name="horas">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4heIwA3wEe-x8-mqo4pgnw" name="suplemento" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_JRBBgA3sEe-x8-mqo4pgnw" name="Fecha">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_hzeDoA3sEe-x8-mqo4pgnw" name="Dia">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_5WaJgA3sEe-x8-mqo4pgnw" name="Mes" type="_vrqigA3sEe-x8-mqo4pgnw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_WpKR4A3tEe-x8-mqo4pgnw" name="Anio">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_vrqigA3sEe-x8-mqo4pgnw" name="Meses">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_wx7nAA3sEe-x8-mqo4pgnw" name="Enero"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_yQX68A3sEe-x8-mqo4pgnw" name="Febrero"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_BQ1CYA3tEe-x8-mqo4pgnw" name="Marzo"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_FDIPUA3tEe-x8-mqo4pgnw" name="Abril"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_KvxCAA3tEe-x8-mqo4pgnw" name="Mayo"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_L6OC8A3tEe-x8-mqo4pgnw" name="Junio"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_NR4ZcA3tEe-x8-mqo4pgnw" name="Julio"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Os93YA3tEe-x8-mqo4pgnw" name="Agosto"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Pt-BYA3tEe-x8-mqo4pgnw" name="Septiembre"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_QmHxYA3tEe-x8-mqo4pgnw" name="Octubre"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_TuURYA3tEe-x8-mqo4pgnw" name="Noviembre"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_U66nYA3tEe-x8-mqo4pgnw" name="Diciembre"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_te-MAA3tEe-x8-mqo4pgnw" client="_Py6KsAxLEe-Uc9oQAB14vg" supplier="_JRBBgA3sEe-x8-mqo4pgnw"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_vQB58A3tEe-x8-mqo4pgnw" client="_JRBBgA3sEe-x8-mqo4pgnw" supplier="_vrqigA3sEe-x8-mqo4pgnw"/>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_mZWXsA3uEe-x8-mqo4pgnw" name="Curso">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_n48iMA3uEe-x8-mqo4pgnw" name="1DAW"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_owoYIA3uEe-x8-mqo4pgnw" name="2DAW"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_E2dIcA3xEe-x8-mqo4pgnw" name="Modulo">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_IvLtgA3xEe-x8-mqo4pgnw" name="nombre" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Ol3NAA3xEe-x8-mqo4pgnw" name="duracion" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_n5ChcA3xEe-x8-mqo4pgnw" name="contenido" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_sBougA3xEe-x8-mqo4pgnw" name="libro" visibility="private" type="_Z55GAA3xEe-x8-mqo4pgnw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Z55GAA3xEe-x8-mqo4pgnw" name="Libro">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_bJg60A3xEe-x8-mqo4pgnw" name="isbn" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_eg2DAA3xEe-x8-mqo4pgnw" name="titulo" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_gxfP8A3xEe-x8-mqo4pgnw" name="editorial" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_jFWI8A3xEe-x8-mqo4pgnw" name="autor" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_2EznIA3yEe-x8-mqo4pgnw" client="_Z55GAA3xEe-x8-mqo4pgnw" supplier="_Mhx_8A3yEe-x8-mqo4pgnw" contract="_Mhx_8A3yEe-x8-mqo4pgnw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Mhx_8A3yEe-x8-mqo4pgnw" name="interfaceLibro">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QNT2gA3yEe-x8-mqo4pgnw" name="consultarDatos">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_U-wzUA3yEe-x8-mqo4pgnw" name="libro" type="_Z55GAA3xEe-x8-mqo4pgnw"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_jE0IAA3yEe-x8-mqo4pgnw" name="consultarFavorito">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_n10Y4A3yEe-x8-mqo4pgnw" name="modulo" type="_E2dIcA3xEe-x8-mqo4pgnw"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_quyKEA3yEe-x8-mqo4pgnw" name="favorito" type="_Z55GAA3xEe-x8-mqo4pgnw" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_A1lpIA3zEe-x8-mqo4pgnw" client="_E2dIcA3xEe-x8-mqo4pgnw" supplier="_Z55GAA3xEe-x8-mqo4pgnw"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_GGydAA3zEe-x8-mqo4pgnw" name="Matricula">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_KTBz8A3zEe-x8-mqo4pgnw" name="numMatricula" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_OHGigA3zEe-x8-mqo4pgnw" name="curso" visibility="private" type="_mZWXsA3uEe-x8-mqo4pgnw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qX_v0g30Ee-x8-mqo4pgnw" name="modulo" type="_E2dIcA3xEe-x8-mqo4pgnw" aggregation="shared" association="_qX_IwA30Ee-x8-mqo4pgnw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qYAW4Q30Ee-x8-mqo4pgnw" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_l0EHEA3zEe-x8-mqo4pgnw" client="_GGydAA3zEe-x8-mqo4pgnw" supplier="_fXfJUAw_Ee-Uc9oQAB14vg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_TA6UoA30Ee-x8-mqo4pgnw" memberEnd="_TA-mEA30Ee-x8-mqo4pgnw _TA_NIg30Ee-x8-mqo4pgnw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TA9X8A30Ee-x8-mqo4pgnw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TA9_AA30Ee-x8-mqo4pgnw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_TA_NIg30Ee-x8-mqo4pgnw" name="alumno" type="_Py6KsAxLEe-Uc9oQAB14vg" association="_TA6UoA30Ee-x8-mqo4pgnw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qX_IwA30Ee-x8-mqo4pgnw" memberEnd="_qX_v0g30Ee-x8-mqo4pgnw _qYAW4g30Ee-x8-mqo4pgnw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qX_v0A30Ee-x8-mqo4pgnw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qX_v0Q30Ee-x8-mqo4pgnw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_qYAW4g30Ee-x8-mqo4pgnw" name="matricula" type="_GGydAA3zEe-x8-mqo4pgnw" association="_qX_IwA30Ee-x8-mqo4pgnw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:AssociationClass" xmi:id="_9vYbQA30Ee-x8-mqo4pgnw" name="Proponer" memberEnd="_9vZCUg30Ee-x8-mqo4pgnw _9vaQcA30Ee-x8-mqo4pgnw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9vZCUA30Ee-x8-mqo4pgnw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9vZCUQ30Ee-x8-mqo4pgnw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_DD63AA31Ee-x8-mqo4pgnw" name="libroPropuesto" type="_Z55GAA3xEe-x8-mqo4pgnw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9vZCUg30Ee-x8-mqo4pgnw" name="libro" type="_Z55GAA3xEe-x8-mqo4pgnw" association="_9vYbQA30Ee-x8-mqo4pgnw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9vaQcA30Ee-x8-mqo4pgnw" name="profesor" type="_TZeBsAxLEe-Uc9oQAB14vg" association="_9vYbQA30Ee-x8-mqo4pgnw"/>
   </packagedElement>
 </uml:Model>
